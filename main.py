@@ -18,10 +18,10 @@ st.markdown("""
 This **Intelligent Scheduling System** utilizes **Particle Swarm Optimization (PSO)** to generate optimal staff rosters.
 
 **Optimization Constraints & Objectives:**
-1.  1. **Hard Constraint (Mandatory):** No staff shortage allowed (Shortage must be 0). Heavy penalty applied.
-2.  2. **Soft Constraint (Preferred):** Minimum 6 staff required when the store is open. Moderate penalty.
-3.  3. **Efficiency (Cost):** Minimize total staff count while satisfying constraints.
-4.  4. **Shift Rules:** Staff works for **8 consecutive hours** (16 Periods). Two shifts available: **Morning** & **Evening**.
+  1. **Hard Constraint (Mandatory):** No staff shortage allowed (Shortage must be 0). Heavy penalty applied.
+  2. **Soft Constraint (Preferred):** Minimum 6 staff required when the store is open. Moderate penalty.
+  3. **Efficiency (Cost):** Minimize total staff count while satisfying constraints.
+  4. **Shift Rules:** Staff works for **8 consecutive hours** (16 Periods). Two shifts available: **Morning** & **Evening**.
 """)
 
 # ==========================================
@@ -355,3 +355,4 @@ if datasets:
         st.pyplot(fig)
 else:
     st.info("Please upload a dataset to proceed.")
+
