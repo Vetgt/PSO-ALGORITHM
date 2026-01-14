@@ -1,5 +1,3 @@
-# For PSO algorithm
-# Employee Shift Scheduling 
 
 import streamlit as st
 import pandas as pd
@@ -432,3 +430,4 @@ if st.sidebar.button("Run PSO"):
     st.subheader("Summary Total Shortage per Department")
     df_summary = pd.DataFrame(summary_rows, columns=["Department","Total Shortage (People)"])
     st.dataframe(df_summary,use_container_width=True)
+
